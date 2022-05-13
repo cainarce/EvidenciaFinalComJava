@@ -14,14 +14,16 @@ public class Usuario {
     private Integer id;
     private String nombre;
     private String contrasena;
+    private String tipoUsuario;
 
     public Usuario() {
     }
 
-    public Usuario(Integer id, String nombre, String contrasena) {
+    public Usuario(Integer id, String nombre, String contrasena, String tipoUsuario) {
         this.id = id;
         this.nombre = nombre;
         this.contrasena = contrasena;
+        this.tipoUsuario = tipoUsuario;
     }
 
     public Integer getId() {
@@ -46,6 +48,14 @@ public class Usuario {
 
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
+    }
+
+    public String getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(String tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
     }
 
 }

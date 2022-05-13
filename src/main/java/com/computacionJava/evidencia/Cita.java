@@ -19,6 +19,18 @@ public class Cita {
     private Medico medico;
     private Paciente paciente;
 
+    public Cita(){
+
+    }
+
+    public Cita(int id, String nombreCita, String fecha, Medico medico, Paciente paciente){
+        this.id = id;
+        this.nombreCita = nombreCita;
+        this.fecha = fecha;
+        this.medico = medico;
+        this.paciente = paciente;
+    }
+
     public Integer getId() {
         return id;
     }
